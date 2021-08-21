@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smallapps</title>
+    <link rel="stylesheet" href="./style/bootstrap.css">
+    <link rel="stylesheet" href="./style/font-awesome.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <script src="./script/jquery-3.6.0.js"></script>
+    <script src="./script/bootstrap.js"></script>
+
+</head>
+
+<body>
+
+    <!-- svg -->
+    <svg display="none">
+				<symbol id="facebook" viewBox="0 0 291.319 291.319">
+		
+					<g>
+						<path d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659
+						S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z" />
+						<path style="fill:#2d312f;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055
+						v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366
+						C154.791,104.556,158.341,100.277,163.394,100.277z" />
+					</g>
+				</symbol>
+
+				<symbol id="twitter" viewBox="0 0 512 512">
+					<path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm33.027344 400.566406c-62.996094 1.085938-86.859375-44.875-86.859375-77.226562v-94.480469h-29.269531v-37.351563c43.875-15.820312 54.421874-55.390624 56.898437-77.933593.171875-1.550781 1.390625-2.160157 2.085937-2.160157h42.347657v73.664063h57.875v43.785156h-58.074219v90.019531c.1875 12.238282 4.679688 29.121094 27.832031 28.5 7.667969-.191406 17.949219-2.421874 23.328125-4.988281l13.90625 41.230469c-5.210937 7.683594-28.816406 16.578125-50.070312 16.941406zm0 0"/>
+				</symbol>
+
+				<symbol id="google" viewBox="0 0 512 512">
+				<g><g><circle cx="256" cy="256" r="256"/></g><path d="m505.822 312.082-157.603-157.603c-19.243-22.084-46.133-21.582-77.659-21.582 0 0-111.769 27.764-111.769 85.594l15.252 149.289 138.04 138.04c96.356-21.536 172.201-97.382 193.739-193.738z"/><path d="m258 259.567v39.328h56.9c-4.66 20.97-23.41 36.69-45.77 36.69h-26.26c-25.86 0-46.89-21.03-46.89-46.89v-65.4c0-25.85 21.03-46.88 46.89-46.88h26.26c25.86 0 46.89 21.03 46.89 46.88h58c0-57.83-47.05-104.88-104.89-104.88h-26.26c-57.84 0-104.89 47.05-104.89 104.88v65.4c0 57.84 47.05 104.89 104.89 104.89h26.26c1.141 0 2.277-.025 3.41-.061 14.231-.327 38.749-2.122 67.432-19.213 31.12-18.543 34.046-43.306 34.046-60.684 0-6.127 0-15.374 0-24.778 0-.051.002-.102.002-.154v-29.128z" fill="#2d312f"/><g fill="#2d312f"><path d="m269.13 176.42h-13.13v-58h13.13c57.84 0 104.89 47.04 104.89 104.88h-58c0-25.86-21.03-46.88-46.89-46.88z"/><path d="m258 259.57h116.02v54.06c0 17.38-2.93 42.14-34.05 60.68-28.68 17.09-53.2 18.89-67.43 19.21-1.13.04-2.27.06-3.41.06h-13.13v-58h13.13c22.36 0 41.11-15.72 45.77-36.68h-56.9z"/></g></g>
+				</symbol>
+
+				<symbol id="instagram" viewBox="0 0 512 512">
+				<path d="m305 256c0 27.0625-21.9375 49-49 49s-49-21.9375-49-49 21.9375-49 49-49 49 21.9375 49 49zm0 0"/><path d="m370.59375 169.304688c-2.355469-6.382813-6.113281-12.160157-10.996094-16.902344-4.742187-4.882813-10.515625-8.640625-16.902344-10.996094-5.179687-2.011719-12.960937-4.40625-27.292968-5.058594-15.503906-.707031-20.152344-.859375-59.402344-.859375-39.253906 0-43.902344.148438-59.402344.855469-14.332031.65625-22.117187 3.050781-27.292968 5.0625-6.386719 2.355469-12.164063 6.113281-16.902344 10.996094-4.882813 4.742187-8.640625 10.515625-11 16.902344-2.011719 5.179687-4.40625 12.964843-5.058594 27.296874-.707031 15.5-.859375 20.148438-.859375 59.402344 0 39.25.152344 43.898438.859375 59.402344.652344 14.332031 3.046875 22.113281 5.058594 27.292969 2.359375 6.386719 6.113281 12.160156 10.996094 16.902343 4.742187 4.882813 10.515624 8.640626 16.902343 10.996094 5.179688 2.015625 12.964844 4.410156 27.296875 5.0625 15.5.707032 20.144532.855469 59.398438.855469 39.257812 0 43.90625-.148437 59.402344-.855469 14.332031-.652344 22.117187-3.046875 27.296874-5.0625 12.820313-4.945312 22.953126-15.078125 27.898438-27.898437 2.011719-5.179688 4.40625-12.960938 5.0625-27.292969.707031-15.503906.855469-20.152344.855469-59.402344 0-39.253906-.148438-43.902344-.855469-59.402344-.652344-14.332031-3.046875-22.117187-5.0625-27.296874zm-114.59375 162.179687c-41.691406 0-75.488281-33.792969-75.488281-75.484375s33.796875-75.484375 75.488281-75.484375c41.6875 0 75.484375 33.792969 75.484375 75.484375s-33.796875 75.484375-75.484375 75.484375zm78.46875-136.3125c-9.742188 0-17.640625-7.898437-17.640625-17.640625s7.898437-17.640625 17.640625-17.640625 17.640625 7.898437 17.640625 17.640625c-.003906 9.742188-7.898437 17.640625-17.640625 17.640625zm0 0"/><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm146.113281 316.605469c-.710937 15.648437-3.199219 26.332031-6.832031 35.683593-7.636719 19.746094-23.246094 35.355469-42.992188 42.992188-9.347656 3.632812-20.035156 6.117188-35.679687 6.832031-15.675781.714844-20.683594.886719-60.605469.886719-39.925781 0-44.929687-.171875-60.609375-.886719-15.644531-.714843-26.332031-3.199219-35.679687-6.832031-9.8125-3.691406-18.695313-9.476562-26.039063-16.957031-7.476562-7.339844-13.261719-16.226563-16.953125-26.035157-3.632812-9.347656-6.121094-20.035156-6.832031-35.679687-.722656-15.679687-.890625-20.6875-.890625-60.609375s.167969-44.929688.886719-60.605469c.710937-15.648437 3.195312-26.332031 6.828125-35.683593 3.691406-9.808594 9.480468-18.695313 16.960937-26.035157 7.339844-7.480469 16.226563-13.265625 26.035157-16.957031 9.351562-3.632812 20.035156-6.117188 35.683593-6.832031 15.675781-.714844 20.683594-.886719 60.605469-.886719s44.929688.171875 60.605469.890625c15.648437.710937 26.332031 3.195313 35.683593 6.824219 9.808594 3.691406 18.695313 9.480468 26.039063 16.960937 7.476563 7.34375 13.265625 16.226563 16.953125 26.035157 3.636719 9.351562 6.121094 20.035156 6.835938 35.683593.714843 15.675781.882812 20.683594.882812 60.605469s-.167969 44.929688-.886719 60.605469zm0 0"/>
+				</symbol>
+
+				<symbol id="youtube" viewBox="0 0 512 512">
+				<g>
+					<path d="m224.113281 303.960938 83.273438-47.960938-83.273438-47.960938zm0 0"/><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm159.960938 256.261719s0 51.917969-6.585938 76.953125c-3.691406 13.703125-14.496094 24.507812-28.199219 28.195312-25.035156 6.589844-125.175781 6.589844-125.175781 6.589844s-99.878906 0-125.175781-6.851562c-13.703125-3.6875-24.507813-14.496094-28.199219-28.199219-6.589844-24.769531-6.589844-76.949219-6.589844-76.949219s0-51.914062 6.589844-76.949219c3.6875-13.703125 14.757812-24.773437 28.199219-28.460937 25.035156-6.589844 125.175781-6.589844 125.175781-6.589844s100.140625 0 125.175781 6.851562c13.703125 3.6875 24.507813 14.496094 28.199219 28.199219 6.851562 25.035157 6.585938 77.210938 6.585938 77.210938zm0 0"/>
+				</g>
+				</symbol>
+		</svg>
+
+
+    <!-- header -->
+
+    <header>
+        <div class="menu-block">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-light navbar-light bg-nav ">
+                    <!-- Brand -->
+                    <a class="navbar-brand logo-brand" href="#">Smallapps</a>
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			               <span class="navbar-toggler-icon"></span>
+			           </button>
+
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link link-nav active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-nav" href="#features">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-nav" href="#screenshot">Screenshot</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-nav" href="#gallery">Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Navbar text-->
+                    <a href="#" class="header-nav-link">
+                        <span class="navbar-text d-none d-md-inline span-navbar__mobile">
+									<i class="fa fa-mobile fa-lg"></i>
+										800-123-456
+						  		</span>
+                    </a>
+                    <a href="#" class="header-nav-link">
+                        <span class="navbar-text d-none d-md-inline span-navbar__mail">
+									<i class="fa fa-envelope fa-lg"></i>
+										smallapps@gmail.com
+						  		</span>
+                    </a>
+
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="header-block">
+            <div class="container">
+                <div class="row justify-content-end header-row align-items-end">
+                    <div class="header-wrapper">
+                        <div class="header-text">
+                            <h2 class="header-title title">Perfect app landing page</h2>
+                            <h2 class="header-title__light title__light">Duis bibendum diam</h2>
+                            <p>Donec elementum mollis magna id aliquet. Etiam eleifend urna eget sem sagittis feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                            <button type="button" class="btn btn-outline-light header-btn block-btn">DOWNLOAD</button>
+                        </div>
+                    </div>
+                    <div class="col-10 right align-self-end">
+                        <img src="./img/glow.png" class="header-image-phone img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="scrollup">
+            <!-- Иконка fa-chevron-up (Font Awesome) -->
+            <i class="fa fa-chevron-up"></i>
+        </div>
+        <section class="section-features" id="features">
+            <div class="container">
+                <div class="row features-title-row">
+
+                    <div class="col text-center features-title-col">
+                        <h2 class="features-title">
+                            Heading Feature title goes here
+                        </h2>
+                        <div class="features-title__p">
+                            <p class="features-title__p1">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row features-row d-flex flex-column-reverse flex-md-row">
+                    <div class="col-md-5 features-row__left ">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col features-links">
+                                        <a href="#" class="d-block">
+                                            <h6><i class="fa fa-heart features-icon"><span class="features-text"> Heading title one</span></i></h6>
+                                        </a>
+                                        <a href="#" class="d-block">
+                                            <h6><i class="fa fa-suitcase features-icon"><span class="features-text"> Heading title one</span></i></h6>
+                                        </a>
+                                        <a href="#" class="d-block">
+                                            <h6><i class="fa fa-leaf features-icon"><span class="features-text"> Heading title one</span></i></h6>
+                                        </a>
+                                        <a href="#" class="d-block">
+                                            <h6"><i class="fa fa-file features-icon"><span class="features-text"> Heading title one</span></i></h6>
+                                        </a>
+                                        <a href="#" class="d-block">
+                                            <h6"><i class="fa fa-umbrella features-icon"><span class="features-text"> Heading title one</span></i></h6>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="col-md-7 ml-auto features-row__right">
+                        <div class="row ">
+                            <div class="col">
+                                <div class="card features-card">
+
+                                    <img class="card-img-top img-fluid mx-auto d-block features-image__r" src="./img/bagbig.png" alt="image">
+
+                                    <div class="card-body">
+                                        <h4 class="card-title features-card-title">Heading Feature title goes here</h4>
+                                        <p class="card-text features-card-text">Nunc accumsan hendrerit nunc, ac venenatis magna facilisis quis. Ut sit amet mi ac neque sodales facilisis. Nullam tempus fermentum lorem nec interdum. Ut id orci id sapien imperdiet vehicula. Etiam quis dignissim
+                                            ante. Donec convallis tincidunt ligula, ac luctus mi interdum a.
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="section-screenshot" id="screenshot">
+            <div class="container">
+                <div class="row screenshot-row d-flex flex-column-reverse flex-sm-row">
+                    <div class="col-sm-6 screenshot-col__left">
+                        <div class="screenshot-text">
+                            <h2 class="screenshot-title title">Onec ultrices ultricies tellus perfect screens here</h2>
+                            <h2 class="screenshot-title__light title-light">Duis bibendum diam non erat facilisis tincidunt.</h2>
+                            <p>Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet. </p>
+                            <button type="button" class="btn btn-outline-light screenshot-btn block-btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 screenshot-col__right ml-auto text-center">
+
+                        <div class="wrap-img text-center">
+                            <img src="./img/screen4.png" alt="image" class="screenshot-image-phone img-fluid">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section-gallery" id="gallery">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-11 col-md-8 mx-auto">
+                        <h2 class="gallery-title text-center title">Our Latest screenshots gallery</h2>
+                        <div class="gallery-text text-center">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet. </div>
+                    </div>
+                </div>
+                <div class="row gallery-row  d-flex justify-content-center">
+                    <div class=" gallery-col col-11">
+                        <div class="container">
+                            <div id="carouselExample3" class="carousel slide" data-interval="false">
+                                <div class="carousel-inner carousel-inner3 row w-10 mxauto" role="listbox">
+                                    <div class="carousel-item carousel-item3 col-md-4 active text-center">
+                                        <img class="img-fluid mx-auto d-bloc text-center" src="./img/screen4.png" alt="slide 1">
+                                        <div class="carousel-item-text">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</div>
+                                    </div>
+                                    <div class="carousel-item carousel-item3 col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="./img/mobile2.png" alt="slide 2">
+                                        <div class="carousel-item-text">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</div>
+                                    </div>
+                                    <div class="carousel-item carousel-item3 col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="./img/screen4.png" alt="slide 3">
+                                        <div class="carousel-item-text">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</div>
+                                    </div>
+                                    <div class="carousel-item carousel-item3 col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="./img/mobile2.png" alt="slide 4">
+                                        <div class="carousel-item-text">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</div>
+                                    </div>
+                                    <div class="carousel-item carousel-item3 col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="./img/screen4.png" alt="slide 5">
+                                        <div class="carousel-item-text">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</div>
+                                    </div>
+                                    <div class="carousel-item carousel-item3 col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="./img/mobile2.png" alt="slide 6">
+                                        <div class="carousel-item-text">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</div>
+                                    </div>
+                                    <div class="carousel-item carousel-item3 col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="./img/mobile2.png" alt="slide 7">
+                                        <div class="carousel-item-text">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</div>
+                                    </div>
+                                    <div class="carousel-item carousel-item3 col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="./img/mobile2.png" alt="slide 8">
+                                        <div class="carousel-item-text">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</div>
+                                    </div>
+                                    <div class="carousel-item carousel-item3 col-md-4">
+                                        <img class="img-fluid mx-auto d-block" src="./img/screen4.png" alt="slide 9">
+                                        <div class="carousel-item-text">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu.</div>
+                                    </div>
+
+                                </div>
+                                <a class="carousel-control-prev control-reviews" href="#carouselExample3" role="button" data-slide="prev">
+                                    <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next control-reviews" href="#carouselExample3" role="button" data-slide="next">
+                                    <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section class="section-bottom">
+            <div class="container">
+                <div class=" row bottom-row d-flex flex-column flex-sm-row">
+                    <div class="col-sm-5 col-bottom__left text-center">
+                        <div class="bottom-img">
+                            <img src="./img/phonestwo.png" alt="image" class="bottom-image-phones img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-bottom__right align-self-start ml-auto ">
+                        <div class="section-bottom-text">
+                            <h2 class="section-bottom-title title">Onec ultrices ultricies tellus perfect screens here</h2>
+                            <h2 class="section-bottom-title__light title-light">Duis bibendum diam non erat facilisis tincidunt.</h2>
+                            <p>Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet. </p>
+                            <button type="button" class="btn btn-outline-light section-bottom-btn block-btn">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-reviews">
+            <div class="container">
+                <div class="reviews-title">What people say about us
+                </div>
+                <div id="carousel" class="carousel slide" data-interval="false">
+                    <!-- Индикаторы -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner carousel-inner-reviews">
+
+                        <div class="carousel-item active carousel-item-reviews">
+                            <div class=" row row-reviews mx-auto">
+                                <div class="col col-reviews">
+
+                                    <div class="reviews-image text-center">
+                                        <img class="img-fluid" src="./img/slider/1w (1).jpg" alt="image">
+                                    </div>
+                                    <div class="reviews-text">“ It’s official – I love this app, I couldn’t be without it now.”</div>
+                                    <div class="reviews-name">- Elizabeth Olsen</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-reviews">
+                            <div class=" row row-reviews mx-auto">
+                                <div class="col col-reviews">
+
+                                    <div class="reviews-image text-center">
+                                        <img class="img-fluid" src="./img/slider/2w.jpg" alt="image">
+                                    </div>
+                                    <div class="reviews-text">“ This is a great gadget!”</div>
+                                    <div class="reviews-name">- Jesica Ahlberg</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-reviews">
+                            <div class=" row row-reviews mx-auto">
+                                <div class="col col-reviews">
+
+                                    <div class="reviews-image text-center">
+                                        <img class="img-fluid" src="./img/slider/3m.jpg" alt="image">
+                                    </div>
+                                    <div class="reviews-text">“ After this purchase, my life has changed.”</div>
+                                    <div class="reviews-name">- Ron Burgundy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="section-form">
+            <div class="container">
+                <div class="row row-form">
+                    <div class="col col-form">
+                        <div class="form-title"><i class="fa fa-envelope fa-lg form-icon"></i>Subscribe our Newsletter</div>
+                        <form method="post" action="#" autocomplete="off">
+                            <div class="form-group d-md-flex group-form">
+
+                                <input name="email" type="email" class="form-control input-form" id="email" placeholder="your email address">
+                                <span class="form-group-btn btn-form">
+											<button type="submit" class="btn btn-danger button-form">Submit</button>
+									     </span>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-title">Say Hi, Get In Touch</div>
+            <div class="row row-footer-items">
+                <div class="col col-footer-items">
+
+                    <a href="#" class="icon-link">
+                        <svg class="icon-footer">
+								  <use xlink:href="#facebook"></use>
+							   </svg>
+                    </a>
+
+                    <a href="#" class="icon-link">
+                        <svg class="icon-footer">
+									<use xlink:href="#twitter"></use>
+			  					</svg>
+                    </a>
+
+                    <a href="#" class="icon-link">
+                        <svg class="icon-footer">
+									<use xlink:href="#google"></use>
+			  					</svg>
+                    </a>
+
+                    <a href="#" class="icon-link">
+                        <svg class="icon-footer">
+									<use xlink:href="#instagram"></use>
+			 					</svg>
+                    </a>
+
+                    <a href="#" class="icon-link">
+                        <svg class="icon-footer">
+									<use xlink:href="#youtube"></use>
+					  			</svg>
+                    </a>
+                </div>
+            </div>
+            <div class="row row-footer-links">
+                <div class="col col-footer-links">
+                    <ul class="footer-menu d-flex flex-wrap justify-content-center flex-sm-row">
+                        <li class="footer-item"><a href="#" class="footer-link">Contact</a></li>
+
+                        <li class="footer-item"><a href="#" class="footer-link">Twitter</a></li>
+
+                        <li class="footer-item"><a href="#" class="footer-link">Press</a></li>
+
+                        <li class="footer-item"><a href="#" class="footer-link">Support</a></li>
+
+                        <li class="footer-item"><a href="#" class="footer-link">Developers</a></li>
+
+                        <li class="footer-item"><a href="#" class="footer-link">Privacy</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
